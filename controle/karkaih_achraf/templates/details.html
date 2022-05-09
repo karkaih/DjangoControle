@@ -1,0 +1,17 @@
+
+
+{% include 'header.html' %}
+{% block content %}
+  <!-- About Card -->
+
+  <div class="w3-card w3-margin w3-margin-top" align="center">
+  <img src="https://i.pinimg.com/originals/d9/56/9b/d9569bbed4393e2ceb1af7ba64fdf86a.jpg" style="width:25%">
+    <div class="w3-container w3-white">
+
+      <h4><b> FUll NAME : {{client.nom}} {{client.prenom}} </b></h4>
+      <p>Code==> {{client.code}}</p>
+    </div>
+  </div>
+
+{% endblock content %}
+{% include 'footer.html' %}
